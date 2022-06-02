@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+//primary
+--VeryDarkMagenta: hsl(300, 43%, 22%);
+--SoftPink: hsl(333, 80%, 67%);
+
+//neutral
+--DarkGrayishMagenta: hsl(303, 10%, 53%);
+--LightGrayishMagenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+body {
+    margin: 0;
+
+}
+
+main {
+
+    .container {
+        font-family: 'League Spartan';
+        width: 350px;
+        .hero {
+            h1 {
+            color:var(--VeryDarkMagenta);
+            font-weight: 700;
+            padding: 1em 2em 0 2em;
+            }
+            p {
+                padding: 0 1em;
+            }
+        }
+        .achievements {
+            .row {
+                margin: auto;
+                
+                .review,.report,.tech {
+                    width: 290px;
+                    margin: auto;
+                    padding: 5px !important;
+                    border-radius: 5px;
+                    
+                }
+                // .reviews {
+                //     background-color: black;
+                // }
+                // .report {
+                //     background-color: red;
+                // }
+                // .tech {
+                //     background-color: aqua;
+                // }
+                h2 {
+                    font-size: 1em;
+                    font-weight: 700;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .experience-card {
+            background-color: var(--VeryDarkMagenta);
+            border-radius: 5px;
+            width: 290px;
+            margin: auto;
+            .info {
+                padding: 1em;
+                .name {
+                    line-height: .1;
+                    margin-left: 1em;
+                    h3 {
+                        font-size: 1.2em;
+                        font-weight: 700;
+                        color: var(--White);
+                    }
+                    span {
+                        color: var(--SoftPink);
+                    }
+                    
+                }
+                p {
+                    color:  var(--White);
+                }
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .container {
+            width: 1000px;
+            .hero {
+                h1 {
+                    padding: 0 3em 0 .3em;
+                    line-height: .8;
+                    margin-top: .8em;
+                }
+                p {
+                    padding: 0 .8em;
+                    color: var(--DarkGrayishMagenta);
+                }
+            }
+            .achievements {
+                .row {
+                    margin-top: 2em;
+                    .review,.report,.tech {
+                        width: 350px;
+                        
+                        
+                        padding: 10px 50px 10px 10px !important;
+                        img {
+                            align-self: center;
+                        }
+
+                        h2 {
+                            margin: 3px 0px 0 10px; //top right bottom left
+                            color: var(--VeryDarkMagenta);
+                        }
+                    }
+                    .review {
+                        margin-left: -18px;
+                    }
+                    .tech {
+                        margin-right: -18px;
+                    }
+                }
+            }
+
+            .exp {
+                height: 240px;
+                margin: auto;
+                width: 990px;
+
+                .experience-card {
+                    width: 310px;
+                }
+            }
+        }
+    }
+}

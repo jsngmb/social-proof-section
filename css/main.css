@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+}
+
+main .container {
+  font-family: 'League Spartan';
+  width: 350px;
+}
+
+main .container .hero h1 {
+  color: var(--VeryDarkMagenta);
+  font-weight: 700;
+  padding: 1em 2em 0 2em;
+}
+
+main .container .hero p {
+  padding: 0 1em;
+}
+
+main .container .achievements .row {
+  margin: auto;
+}
+
+main .container .achievements .row .review, main .container .achievements .row .report, main .container .achievements .row .tech {
+  width: 290px;
+  margin: auto;
+  padding: 5px !important;
+  border-radius: 5px;
+}
+
+main .container .achievements .row h2 {
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+main .container .experience-card {
+  background-color: var(--VeryDarkMagenta);
+  border-radius: 5px;
+  width: 290px;
+  margin: auto;
+}
+
+main .container .experience-card .info {
+  padding: 1em;
+}
+
+main .container .experience-card .info .name {
+  line-height: .1;
+  margin-left: 1em;
+}
+
+main .container .experience-card .info .name h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--White);
+}
+
+main .container .experience-card .info .name span {
+  color: var(--SoftPink);
+}
+
+main .container .experience-card .info p {
+  color: var(--White);
+}
+
+main .container .experience-card .info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@media (min-width: 900px) {
+  main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  main .container {
+    width: 1000px;
+  }
+  main .container .hero h1 {
+    padding: 0 3em 0 .3em;
+    line-height: .8;
+    margin-top: .8em;
+  }
+  main .container .hero p {
+    padding: 0 .8em;
+    color: var(--DarkGrayishMagenta);
+  }
+  main .container .achievements .row {
+    margin-top: 2em;
+  }
+  main .container .achievements .row .review, main .container .achievements .row .report, main .container .achievements .row .tech {
+    width: 350px;
+    padding: 10px 50px 10px 10px !important;
+  }
+  main .container .achievements .row .review img, main .container .achievements .row .report img, main .container .achievements .row .tech img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .container .achievements .row .review h2, main .container .achievements .row .report h2, main .container .achievements .row .tech h2 {
+    margin: 3px 0px 0 10px;
+    color: var(--VeryDarkMagenta);
+  }
+  main .container .achievements .row .review {
+    margin-left: -18px;
+  }
+  main .container .achievements .row .tech {
+    margin-right: -18px;
+  }
+  main .container .exp {
+    height: 240px;
+    margin: auto;
+    width: 990px;
+  }
+  main .container .exp .experience-card {
+    width: 310px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
